@@ -1,0 +1,19 @@
+{
+  "name": "car-trader",
+  "version": "0.0.1",
+  "description": "A personal project for a car selling site.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "author": "Oheers",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.15"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "flowbite": "^2.5.2"
+  }
+}
