@@ -65,19 +65,10 @@
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
             <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
-                    <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+                    <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Buying</a>
                 </li>
                 <li>
-                    <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-                </li>
-                <li>
-                    <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-                </li>
-                <li>
-                    <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
-                </li>
-                <li>
-                    <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                    <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Selling</a>
                 </li>
             </ul>
         </div>
@@ -86,8 +77,42 @@
 
 <div class="flex container mx-auto px-4" id="main-container">
     <div class="w-1/4">
-        <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-4xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 group mt-4">
-            Search Bar
+        <div class="flex bg-white rounded-lg md:max-w-1/2 dark:bg-gray-800 dark:hover:bg-gray-700 group mt-4">
+            <form class="max-w-sm">
+                <label for="search_make" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Make</label>
+                <select id="search_make" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-max p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option>Alpha Romeo</option>
+                    <option>Bentley</option>
+                    <option>Citroen</option>
+                    <option>DS</option>
+                    <option>Ferrari</option>
+                    <option>Genesis</option>
+                    <option>Honda</option>
+                    <option>Jaguar</option>
+                    <option>Kia</option>
+                    <option>Lexus</option>
+                    <option>Mazda</option>
+                    <option>Peugot</option>
+                    <option>Tesla</option>
+                </select>
+
+                <label for="search_model" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Model</label>
+                <select id="search_model" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option>Alpha Romeo</option>
+                    <option>Bentley</option>
+                    <option>Citroen</option>
+                    <option>DS</option>
+                    <option>E-Cobra</option>
+                    <option>Ferrari</option>
+                    <option>Genesis</option>
+                    <option>Honda</option>
+                    <option>ISUZU</option>
+                    <option>Jaguar</option>
+                    <option>Kia</option>
+                    <option>Lexus</option>
+                    <option>Mazda</option>
+                </select>
+            </form>
         </div>
     </div>
     <div class="w-3/4 mx-4">
@@ -134,10 +159,10 @@
                     </div>
                     <p class="mb-3 text-lg text-gray-900 group-hover:text-blue-800 group-hover:underline md:text-xl dark:text-gray-400">Peugot 508 SW Allure</p>
                     <div class="mb-2">
-                        <span class="bg-red-100 text-red-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">212,400 Miles</span>
-                        <span class="bg-gray-100 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">2014 (14 reg)</span>
-                        <span class="bg-gray-100 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">Estate</span>
-                        <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Diesel</span>
+                        <span class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">212,400 Miles</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">2014 (14 reg)</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">Estate</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Diesel</span>
                     </div>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Very Economical, Panoramic Sunroof, Huge Spec!</p>
                 </div>
@@ -150,10 +175,10 @@
                     </div>
                     <p class="mb-3 text-lg text-gray-900 group-hover:text-blue-800 group-hover:underline md:text-xl dark:text-gray-400">Fiat Panda Active</p>
                     <div class="mb-2">
-                        <span class="bg-gray-100 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">143,000</span>
-                        <span class="bg-gray-100 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">2004 (04 reg)</span>
-                        <span class="bg-gray-100 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">Hatchback</span>
-                        <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Petrol</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">143,000</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">2004 (04 reg)</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">Hatchback</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Petrol</span>
                     </div>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Spares & Repairs, Part-Ex to clear</p>
                 </div>
@@ -168,8 +193,8 @@
                     <p class="mb-3 text-lg text-gray-900 group-hover:text-blue-800 group-hover:underline md:text-xl dark:text-gray-400">Polestar Polestar 2 Long Range Plus</p>
                     <div class="mb-2">
                         <span class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">38,547</span>
-                        <span class="bg-gray-100 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">2020 (70 reg)</span>
-                        <span class="bg-gray-100 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">Hatchback</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">2020 (70 reg)</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">Hatchback</span>
                         <span class="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded me-2 dark:bg-green-900 dark:text-green-300">Electric</span>
                     </div>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">PAN ROOF, PERFORMANCE PACK, 20"</p>
