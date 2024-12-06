@@ -14,10 +14,6 @@ app.get('/', (req, res) => {
     res.status(200).sendFile(path.resolve(__dirname, './public/index.html'))
 })
 
-app.get('/src/output.css', (req, res) => {
-    res.status(200).sendFile(path.resolve(__dirname, './src/output.css'))
-})
-
 server.listen(port, () => {
     console.log("Server Initiated.");
 })
