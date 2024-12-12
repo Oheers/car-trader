@@ -142,7 +142,7 @@
                         </div>
                         <div class="flex mt-2 p-2 rounded cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 sorting-handler" id="sort-by-newest">
                             <div class="flex items-center h-5">
-                                <input id="helper-radio-newest" aria-describedby="helper-radio-text" type="radio" name="sort-by" value="" class="w-4 h-4 cursor-pointer text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <input checked id="helper-radio-newest" aria-describedby="helper-radio-text" type="radio" name="sort-by" value="" class="w-4 h-4 cursor-pointer text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                             </div>
                             <div class="ms-2 text-sm">
                                 <label for="helper-radio-newest" class="font-medium cursor-pointer text-gray-900 dark:text-gray-300">Most Recent</label>
@@ -267,14 +267,129 @@
             </h2>
             <div id="accordion-open-body-6" class="hidden" aria-labelledby="accordion-open-heading-3">
                 <div class="p-5 border border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                    <div class="flex items-center mt-2">
-                        <input checked id="black-checkbox" type="checkbox" value="" class="w-4 h-4 text-gray-900 bg-gray-100 border-gray-300 rounded focus:ring-gray-500 dark:focus:ring-gray-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <label for="black-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Black</label>
-                    </div>
-                    <div class="flex items-center me-4">
-                        <input checked id="blue-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <label for="blue-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Blue</label>
-                    </div>
+                    <form class="max-w-sm">
+                        <div class="flex p-2 rounded cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 colour-handler" id="colour-option-black">
+                            <div class="w-5/6">
+                                <div class="items-center h-5">
+                                    <input checked id="colour-option-black-button" aria-describedby="helper-radio-text" type="checkbox" name="sort-by" value="" class="w-4 h-4 cursor-pointer text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="colour-option-black-button" class="ms-1 text-sm font-medium cursor-pointer text-gray-900 dark:text-gray-300">Black</label>
+                                </div>
+                            </div>
+                            <div class="w-1/6 ms-2 text-sm">
+                                <div class="w-6 h-6 rounded-full bg-black shrink-0 grow-0"></div>
+                            </div>
+                        </div>
+                        <div class="flex p-2 rounded cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 colour-handler" id="colour-option-grey">
+                            <div class="w-5/6">
+                                <div class="items-center h-5">
+                                    <input checked id="colour-option-grey-button" aria-describedby="helper-radio-text" type="checkbox" name="sort-by" value="" class="w-4 h-4 cursor-pointer text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="colour-option-grey-button" class="ms-1 text-sm font-medium cursor-pointer text-gray-900 dark:text-gray-300">Grey</label>
+                                </div>
+                            </div>
+                            <div class="w-1/6 ms-2 text-sm">
+                                <div class="w-6 h-6 rounded-full bg-gray-500 shrink-0 grow-0"></div>
+                            </div>
+                        </div>
+                        <div class="flex p-2 rounded cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 colour-handler" id="colour-option-silver">
+                            <div class="w-5/6">
+                                <div class="items-center h-5">
+                                    <input checked id="colour-option-silver-button" aria-describedby="helper-radio-text" type="checkbox" name="sort-by" value="" class="w-4 h-4 cursor-pointer text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="colour-option-silver-button" class="ms-1 text-sm font-medium cursor-pointer text-gray-900 dark:text-gray-300">Silver</label>
+                                </div>
+                            </div>
+                            <div class="w-1/6 ms-2 text-sm">
+                                <div class="w-6 h-6 rounded-full bg-gray-200 shrink-0 grow-0"></div>
+                            </div>
+                        </div>
+                        <div class="flex p-2 rounded cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 colour-handler" id="colour-option-white">
+                            <div class="w-5/6">
+                                <div class="items-center h-5">
+                                    <input checked id="colour-option-white-button" aria-describedby="helper-radio-text" type="checkbox" name="sort-by" value="" class="w-4 h-4 cursor-pointer text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="colour-option-white-button" class="ms-1 text-sm font-medium cursor-pointer text-gray-900 dark:text-gray-300">White</label>
+                                </div>
+                            </div>
+                            <div class="w-1/6 ms-2 text-sm">
+                                <div class="w-6 h-6 rounded-full bg-gradient-to-r from-white to-gray-100 shrink-0 grow-0"></div>
+                            </div>
+                        </div>
+                        <div class="flex p-2 rounded cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 colour-handler" id="colour-option-blue">
+                            <div class="w-5/6">
+                                <div class="items-center h-5">
+                                    <input checked id="colour-option-blue-button" aria-describedby="helper-radio-text" type="checkbox" name="sort-by" value="" class="w-4 h-4 cursor-pointer text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="colour-option-blue-button" class="ms-1 text-sm font-medium cursor-pointer text-gray-900 dark:text-gray-300">Blue</label>
+                                </div>
+                            </div>
+                            <div class="w-1/6 ms-2 text-sm">
+                                <div class="w-6 h-6 rounded-full bg-blue-500 shrink-0 grow-0"></div>
+                            </div>
+                        </div>
+                        <div class="flex p-2 rounded cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 colour-handler" id="colour-option-red">
+                            <div class="w-5/6">
+                                <div class="items-center h-5">
+                                    <input checked id="colour-option-red-button" aria-describedby="helper-radio-text" type="checkbox" name="sort-by" value="" class="w-4 h-4 cursor-pointer text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="colour-option-red-button" class="ms-1 text-sm font-medium cursor-pointer text-gray-900 dark:text-gray-300">Red</label>
+                                </div>
+                            </div>
+                            <div class="w-1/6 ms-2 text-sm">
+                                <div class="w-6 h-6 rounded-full bg-red-500 shrink-0 grow-0"></div>
+                            </div>
+                        </div>
+                        <div class="flex p-2 rounded cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 colour-handler" id="colour-option-green">
+                            <div class="w-5/6">
+                                <div class="items-center h-5">
+                                    <input checked id="colour-option-green-button" aria-describedby="helper-radio-text" type="checkbox" name="sort-by" value="" class="w-4 h-4 cursor-pointer text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="colour-option-green-button" class="ms-1 text-sm font-medium cursor-pointer text-gray-900 dark:text-gray-300">Green</label>
+                                </div>
+                            </div>
+                            <div class="w-1/6 ms-2 text-sm">
+                                <div class="w-6 h-6 rounded-full bg-green-500 shrink-0 grow-0"></div>
+                            </div>
+                        </div>
+                        <div class="flex p-2 rounded cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 colour-handler" id="colour-option-yellow">
+                            <div class="w-5/6">
+                                <div class="items-center h-5">
+                                    <input checked id="colour-option-yellow-button" aria-describedby="helper-radio-text" type="checkbox" name="sort-by" value="" class="w-4 h-4 cursor-pointer text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="colour-option-yellow-button" class="ms-1 text-sm font-medium cursor-pointer text-gray-900 dark:text-gray-300">Yellow</label>
+                                </div>
+                            </div>
+                            <div class="w-1/6 ms-2 text-sm">
+                                <div class="w-6 h-6 rounded-full bg-yellow-300 shrink-0 grow-0"></div>
+                            </div>
+                        </div>
+                        <div class="flex p-2 rounded cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 colour-handler" id="colour-option-orange">
+                            <div class="w-5/6">
+                                <div class="items-center h-5">
+                                    <input checked id="colour-option-orange-button" aria-describedby="helper-radio-text" type="checkbox" name="sort-by" value="" class="w-4 h-4 cursor-pointer text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="colour-option-orange-button" class="ms-1 text-sm font-medium cursor-pointer text-gray-900 dark:text-gray-300">Orange</label>
+                                </div>
+                            </div>
+                            <div class="w-1/6 ms-2 text-sm">
+                                <div class="w-6 h-6 rounded-full bg-amber-500 shrink-0 grow-0"></div>
+                            </div>
+                        </div>
+                        <div class="flex p-2 rounded cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 colour-handler" id="colour-option-purple">
+                            <div class="w-5/6">
+                                <div class="items-center h-5">
+                                    <input checked id="colour-option-purple-button" aria-describedby="helper-radio-text" type="checkbox" name="sort-by" value="" class="w-4 h-4 cursor-pointer text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="colour-option-purple-button" class="ms-1 text-sm font-medium cursor-pointer text-gray-900 dark:text-gray-300">Purple</label>
+                                </div>
+                            </div>
+                            <div class="w-1/6 ms-2 text-sm">
+                                <div class="w-6 h-6 rounded-full bg-purple-500 shrink-0 grow-0"></div>
+                            </div>
+                        </div>
+                        <div class="flex p-2 rounded cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 colour-handler" id="colour-option-brown">
+                            <div class="w-5/6">
+                                <div class="items-center h-5">
+                                    <input checked id="colour-option-brown-button" aria-describedby="helper-radio-text" type="checkbox" name="sort-by" value="" class="w-4 h-4 cursor-pointer text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="colour-option-brown-button" class="ms-1 text-sm font-medium cursor-pointer text-gray-900 dark:text-gray-300">Brown</label>
+                                </div>
+                            </div>
+                            <div class="w-1/6 ms-2 text-sm">
+                                <div class="w-6 h-6 rounded-full bg-amber-900 shrink-0 grow-0"></div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

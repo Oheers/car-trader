@@ -5,6 +5,14 @@ addEventListener("DOMContentLoaded", (event) => {
             document.getElementById(`helper-radio-${sortBySelectors[i].id.split("-")[2]}`).checked = true;
         })
     }
+
+    const colourSelectors = document.getElementsByClassName("colour-handler");
+    for (let i = 0; i < colourSelectors.length; i++) {
+        colourSelectors[i].addEventListener("click", (event) => {
+            const box = document.getElementById(`${colourSelectors[i].id + `-button`}`);
+            box.checked = !box.checked;
+        })
+    }
     document.getElementById("search_make").addEventListener("change", (event) => {
         changeCarMake(event.target.value);
     })
